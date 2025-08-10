@@ -21,8 +21,7 @@
       @click="startDraw"
       class="draw-btn"
     >
-      // eslint-disable-next-line vue/no-parsing-error
-      {{ chances <= 0 ? '次數已用完' : '開始抽獎' }}
+    开始抽奖
     </el-button>
   </div>
 </template>
@@ -55,8 +54,8 @@ export default {
   },
   methods: {
     generateTargetSteps () {
-      const firstArray = [4, 12, 20, 28, 36, 44]
-      const secondArray = [7, 15, 23, 31, 39, 47]
+      const firstArray = [12, 20, 28, 36, 44]
+      const secondArray = [15, 23, 31, 39, 47]
       const useFirstArray = Math.random() < 0.5
 
       if (useFirstArray) {
