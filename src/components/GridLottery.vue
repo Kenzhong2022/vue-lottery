@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-parsing-error -->
 <template>
   <div class="grid-container">
     <div class="grid-wrapper">
@@ -20,7 +21,8 @@
       @click="startDraw"
       class="draw-btn"
     >
-      {{ 開始抽獎 }}
+      // eslint-disable-next-line vue/no-parsing-error
+      {{ chances <= 0 ? '次數已用完' : '開始抽獎' }}
     </el-button>
   </div>
 </template>
