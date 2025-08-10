@@ -20,12 +20,14 @@
         @click="startDraw"
         class="draw-btn"
       >
-        {{ chances <= 0 ? '次數已用完' : '開始抽獎' }}
+      {{ chances <= 0 ? '次數已用完' : '開始抽獎' }}
       </el-button>
     </div>
   </template>
 
+/* eslint-disable no-console */
 <script>
+/* eslint-disable no-console */
 export default {
   props: {
     chances: Number,
